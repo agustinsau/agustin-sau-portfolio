@@ -4,16 +4,7 @@ import { useState, useCallback, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { Menu, X } from "lucide-react";
-
-const navItems = [
-  { name: "Inicio", href: "#hero", id: "hero" },
-  { name: "Tecnologías", href: "#tech", id: "tech" },
-  { name: "Proyectos", href: "#projects", id: "projects" },
-  { name: "Sobre mí", href: "#about", id: "about" },
-  { name: "Contacto", href: "#contact", id: "contact" },
-];
-
-const NAVBAR_OFFSET = 80;
+import { NAV_ITEMS, NAVBAR_OFFSET } from "@/config/navigation";
 
 const Navbar = () => {
   const activeSection = useActiveSection();
@@ -84,7 +75,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-8">
-          {navItems.map((item, i) => {
+          {NAV_ITEMS.map((item, i) => {
             const isActive = activeSection === item.id;
 
             return (
@@ -173,7 +164,7 @@ const Navbar = () => {
             className="md:hidden border-t border-border/50 overflow-hidden"
           >
             <div className="container mx-auto px-4 py-4 flex flex-col gap-2">
-              {navItems.map((item, i) => {
+              {NAV_ITEMS.map((item, i) => {
                 const isActive = activeSection === item.id;
 
                 return (
@@ -204,7 +195,7 @@ const Navbar = () => {
                 aria-label="Sección de contacto - Hablemos"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: navItems.length * 0.04 }}
+                transition={{ delay: NAV_ITEMS.length * 0.04 }}
                 className="w-full px-4 py-2.5 rounded-lg bg-gradient-primary text-primary-foreground font-medium text-center focus-visible-ring mt-2"
               >
                 Hablemos

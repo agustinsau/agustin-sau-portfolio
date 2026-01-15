@@ -1,6 +1,6 @@
 "use client";
 
-import { Project } from "@/data/projects";
+import type { Project } from '@/types';
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 

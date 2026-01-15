@@ -1,13 +1,4 @@
-export type Project = {
-  slug: string;
-  title: string;
-  description: string;
-  image: string;
-  tech: string[];
-  type: "Fullstack" | "Frontend" | "Backend";
-  github: string;
-  demo?: string;
-};
+import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {

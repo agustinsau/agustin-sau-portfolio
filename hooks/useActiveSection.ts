@@ -11,7 +11,7 @@ export const useActiveSection = () => {
       let current = "";
 
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
+        const sectionTop = (section as HTMLElement).offsetTop;
         if (window.scrollY >= sectionTop - 200) {
           current = section.getAttribute("id") || "";
         }
