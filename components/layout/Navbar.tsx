@@ -1,16 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 const navItems = [
-  { name: "Inicio", href: "#hero" },
-  { name: "Tecnologías", href: "#tech" },
-  { name: "Proyectos", href: "#projects" },
-  { name: "Sobre mí", href: "#about" },
-  { name: "Contacto", href: "#contact" },
+  { name: "Inicio", href: "#hero", id: "hero" },
+  { name: "Tecnologías", href: "#tech", id: "tech" },
+  { name: "Proyectos", href: "#projects", id: "projects" },
+  { name: "Sobre mí", href: "#about", id: "about" },
+  { name: "Contacto", href: "#contact", id: "contact" },
 ];
 
 const Navbar = () => {
+  const activeSection = useActiveSection();
+
   return (
     <motion.nav
       initial={{ y: -100, opacity: 0 }}
@@ -25,22 +28,30 @@ const Navbar = () => {
         </a>
 
         <ul className="hidden md:flex gap-8">
-          {navItems.map((item, i) => (
-            <motion.li
-              key={item.name}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-            >
-              <a
-                href={item.href}
-                aria-label={`Ir a ${item.name}`}
-                className="text-sm text-muted-foreground hover:text-primary transition focus-visible-ring rounded-lg px-2 py-1"
+          {navItems.map((item, i) => {
+            const isActive = activeSection === item.id;
+            return (
+              <motion.li
+                key={item.name}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
               >
-                {item.name}
-              </a>
-            </motion.li>
-          ))}
+                <a
+                  href={item.href}
+                  aria-label={`Ir a ${item.name}`}
+                  aria-current={isActive ? "page" : undefined}
+                  className={`text-sm transition focus-visible-ring rounded-lg px-2 py-1 ${
+                    isActive
+                      ? "text-primary font-semibold border-b-2 border-primary"
+                      : "text-muted-foreground hover:text-primary"
+                  }`}
+                >
+                  {item.name}
+                </a>
+              </motion.li>
+            );
+          })}
         </ul>
 
         <a
