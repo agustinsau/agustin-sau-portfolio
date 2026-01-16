@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type ProfilePictureProps = {
   className?: string;
 };
@@ -21,11 +23,7 @@ const ProfilePicture = ({ className = "" }: ProfilePictureProps) => {
           border-2 border-primary/30
         "
       >
-        <img
-          src="/images/profile.jpg"
-          alt="Agustin Sau"
-          className="w-full h-full object-cover"
-        />
+        <Image className="w-full h-full object-cover" src="/images/profile.jpg" alt="Agustin Sau" width={200} height={100} />
       </div>
     </div>
   );

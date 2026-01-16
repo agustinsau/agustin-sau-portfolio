@@ -21,6 +21,7 @@ export interface Project {
   type: "Fullstack" | "Frontend" | "Backend";
   github: string;
   demo?: string;
+  header: string;
 }
 
 // Tipos para form

@@ -1,18 +1,16 @@
 "use client";
 
-import type { Project } from '@/types';
+import type { Project } from "@/types";
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 interface ProjectCardProps {
   project: Project;
   reversed?: boolean;
 }
 
-export default function ProjectCard({
-  project,
-  reversed,
-}: ProjectCardProps) {
+export default function ProjectCard({ project, reversed }: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -26,7 +24,7 @@ export default function ProjectCard({
           bg-white/5 backdrop-blur
           border border-white/10
           rounded-2xl
-          p-8 md:p-10
+          p-12 md:p-14
         `}
       >
         <div
@@ -36,11 +34,13 @@ export default function ProjectCard({
         >
           {/* Image */}
           <div className={reversed ? "md:col-start-2" : ""}>
-            <div className="relative rounded-xl overflow-hidden bg-white/10">
-              <img
+            <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-white/10">
+              <Image
                 src={project.image}
                 alt={project.title}
+                fill
                 className="w-full h-full object-cover"
+                priority
               />
             </div>
           </div>
@@ -49,16 +49,12 @@ export default function ProjectCard({
           <div className="space-y-4">
             {/* Meta */}
             <div className="flex items-center gap-3 text-sm font-mono">
-              <span className="text-primary">Proyecto destacado</span>
+              <span className="text-primary">{project.header}</span>
               <span className="text-muted-foreground">·</span>
-              <span className="text-muted-foreground">
-                {project.type}
-              </span>
+              <span className="text-muted-foreground">{project.type}</span>
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold">
-              {project.title}
-            </h3>
+            <h3 className="text-2xl md:text-3xl font-bold">{project.title}</h3>
 
             <p className="text-muted-foreground leading-relaxed">
               {project.description}

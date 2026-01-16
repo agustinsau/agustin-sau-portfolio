@@ -124,7 +124,7 @@ export const ContactForm = () => {
           onChange={handleChange}
           aria-invalid={!!errors.name}
           aria-describedby={errors.name ? "name-error" : undefined}
-          className={`w-full px-4 py-3 rounded-lg bg-card border focus-visible-ring transition ${
+          className={`w-full px-4 py-3 rounded-lg bg-card border focus-visible-ring transition text-black placeholder-gray-500 ${
             errors.name
               ? "border-destructive text-destructive"
               : "border-border hover:border-primary/50"
@@ -157,7 +157,7 @@ export const ContactForm = () => {
           onChange={handleChange}
           aria-invalid={!!errors.email}
           aria-describedby={errors.email ? "email-error" : undefined}
-          className={`w-full px-4 py-3 rounded-lg bg-card border focus-visible-ring transition ${
+          className={`w-full px-4 py-3 rounded-lg bg-card border focus-visible-ring transition text-black placeholder-gray-500 ${
             errors.email
               ? "border-destructive text-destructive"
               : "border-border hover:border-primary/50"
@@ -190,7 +190,7 @@ export const ContactForm = () => {
           rows={5}
           aria-invalid={!!errors.message}
           aria-describedby={errors.message ? "message-error" : undefined}
-          className={`w-full px-4 py-3 rounded-lg bg-card border focus-visible-ring transition resize-none ${
+          className={`w-full px-4 py-3 rounded-lg bg-card border focus-visible-ring transition resize-none text-black placeholder-gray-500 ${
             errors.message
               ? "border-destructive text-destructive"
               : "border-border hover:border-primary/50"

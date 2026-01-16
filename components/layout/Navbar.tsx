@@ -74,7 +74,7 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex gap-8">
+        <ul className="hidden md2:flex gap-8">
           {NAV_ITEMS.map((item, i) => {
             const isActive = activeSection === item.id;
 
@@ -109,7 +109,7 @@ const Navbar = () => {
             href="#contact"
             onClick={(e) => handleNavClick(e, "contact")}
             aria-label="Sección de contacto - Hablemos"
-            className="hidden md:inline-flex px-4 py-2 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-medium focus-visible-ring"
+            className="hidden md2:inline-flex px-4 py-2 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-medium focus-visible-ring"
           >
             Hablemos
           </a>
@@ -121,7 +121,7 @@ const Navbar = () => {
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-menu"
             aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
-            className="md:hidden p-2 rounded-lg focus-visible-ring"
+            className="md2:hidden p-2 rounded-lg focus-visible-ring"
             whileTap={{ scale: 0.95 }}
           >
             <AnimatePresence mode="wait">
@@ -161,7 +161,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden border-t border-border/50 overflow-hidden"
+            className="md2:hidden border-t border-border/50 overflow-hidden"
           >
             <div className="container mx-auto px-4 py-4 flex flex-col gap-2">
               {NAV_ITEMS.map((item, i) => {
