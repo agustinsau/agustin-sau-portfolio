@@ -417,9 +417,9 @@ Este es un proyecto personal, pero las sugerencias son bienvenidas:
 
 ## 📞 Contacto
 
-- 📧 Email: contacto@ejemplo.com
-- 💼 LinkedIn: [linkedin.com/in/agusau](https://linkedin.com)
-- 🐙 GitHub: [github.com/agustinsau](https://github.com)
+- 📧 Email: agustin.sauu@gmail.com
+- 💼 LinkedIn: [linkedin.com/in/agusau](https://www.linkedin.com/in/agusau/)
+- 🐙 GitHub: [github.com/agustinsau](https://github.com/agustinsau)
 
 ---
 
@@ -429,6 +429,6 @@ Este es un proyecto personal, pero las sugerencias son bienvenidas:
 
 ⭐ Si te gusta este proyecto, dale una estrella en GitHub
 
-[Ver Portfolio en Vivo](https://portfolio.vercel.app) • [LinkedIn](https://linkedin.com) • [GitHub](https://github.com)
+[Ver Portfolio en Vivo](https://agustin-sau-portfolio.vercel.app/) • [LinkedIn](https://www.linkedin.com/in/agusau/) • [GitHub](https://github.com/agustinsau)
 
 </div>
