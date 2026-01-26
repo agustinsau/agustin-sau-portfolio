@@ -22,6 +22,7 @@ export interface Project {
   github: string;
   demo?: string;
   header: string;
+  learnings?: string;
 }
 
 // Tipos para form

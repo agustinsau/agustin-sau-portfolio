@@ -4,24 +4,24 @@ import { motion } from "framer-motion";
 
 const technologies = {
   Frontend: [
-    { name: "HTML5", level: 85 },
-    { name: "CSS3", level: 85 },
-    { name: "TypeScript", level: 75 },
-    { name: "Tailwind CSS", level: 70 },
-    { name: "React", level: 60 },
-    { name: "Next.js", level: 50 },
+    { name: "HTML5", level: 85, description: "Estructura y semántica de páginas web" },
+    { name: "CSS3", level: 85, description: "Estilos, animaciones y diseño visual" },
+    { name: "Tailwind CSS", level: 70, description: "Framework CSS para el estilo visual" },
+    { name: "React", level: 60, description: "Librería para interfaces dinámicas" },
+    { name: "Next.js", level: 50, description: "Framework React con SSR y optimizaciones" },
   ],
   Backend: [
-    { name: "MySQL", level: 80 },
-    { name: "REST APIs", level: 80 },
-    { name: "NestJS", level: 70 },
-    { name: "Node.js", level: 50 },
+    { name: "MySQL", level: 80, description: "Base de datos relacional" },
+    { name: "REST APIs", level: 80, description: "Comunicación entre cliente y servidor" },
+    { name: "TypeScript", level: 75, description: "JavaScript con tipado estático" },
+    { name: "NestJS", level: 70, description: "Framework Node.js escalable" },
+    { name: "Node.js", level: 50, description: "JavaScript en el servidor" },
   ],
   Herramientas: [
-    { name: "Github", level: 80 },
-    { name: "Jira", level: 65 },
-    { name: "Figma", level: 65 },
-    { name: "Postman", level: 60 },
+    { name: "Github", level: 80, description: "Control de versiones y colaboración" },
+    { name: "Jira", level: 65, description: "Gestión de proyectos y tareas" },
+    { name: "Figma", level: 65, description: "Diseño y prototipado colaborativo" },
+    { name: "Postman", level: 60, description: "Testing y documentación de APIs" },
   ],
 };
 
@@ -59,12 +59,18 @@ const TechStack = () => {
               <div className="space-y-5">
                 {techs.map((tech, index) => (
                   <div key={tech.name}>
-                    <div className="flex justify-between mb-2">
+                    <div className="flex justify-between mb-1">
                       <span className="text-sm font-medium">{tech.name}</span>
                       <span className="text-xs text-muted-foreground">
                         {tech.level}%
                       </span>
                     </div>
+                    
+                    {tech.description && (
+                      <p className="text-sm text-muted-foreground mb-2">
+                        {tech.description}
+                      </p>
+                    )}
 
                     <div className="h-2 bg-secondary rounded-full overflow-hidden">
                       <motion.div

@@ -11,6 +11,7 @@ export const projects: Project[] = [
     type: "Frontend",
     github: "https://github.com/JereStorm/barberbook-frontend",
     header: "Proyecto Destacado",
+    learnings: "Aprendí a construir componentes reutilizables con React y diseño responsivo con Tailwind. Tambien, mejoré mis habilidades en TypeScript.",
   },
   {
     slug: "barberia-turnos-backend",
@@ -22,6 +23,7 @@ export const projects: Project[] = [
     type: "Backend",
     github: "https://github.com/JereStorm/barberbook-backend",
     header: "Proyecto Destacado",
+    learnings: "Aprendí sobre la arquitectura modular de NestJS, tambien sobre autenticación con JWT, TypeORM y APIs RESTful.",
   },
   {
     slug: "supermercado-online",
@@ -33,6 +35,7 @@ export const projects: Project[] = [
     type: "Frontend",
     github: "https://github.com/agustinsau/frontEnd-CEPIT-2024",
     header: "Proyecto de Introducción",
+    learnings: "Aprendí fundamentos de JavaScript vanilla, manipulación del DOM y gestión de eventos.",
   },
   {
     slug: "videojuego-web",
@@ -44,5 +47,6 @@ export const projects: Project[] = [
     type: "Frontend",
     github: "https://github.com/agustinsau/Interfaces-Web-Game",
     header: "Proyecto Extra",
+    learnings: "Adquirí experiencia en logica y programación implementando sistemas de colisiones, animación y control de entrada del usuario.",
   },
 ];
