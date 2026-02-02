@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import ProfilePicture from "../layout/ProfilePicture";
+import { SOCIAL_LINKS } from "@/config/navigation";
 
 const Hero = () => {
   return (
@@ -78,7 +79,7 @@ const Hero = () => {
             className="flex items-center justify-center gap-6 mb-16"
           >
             <a
-              href="https://github.com/agustinsau"
+              href={SOCIAL_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visitar perfil de GitHub"
@@ -87,7 +88,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://www.linkedin.com/in/agusau/"
+              href={SOCIAL_LINKS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visitar perfil de LinkedIn"
@@ -96,7 +97,7 @@ const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:agustin.sauu@gmail.com"
+              href={`mailto:${SOCIAL_LINKS.email}`}
               aria-label="Enviar correo electrónico"
               className="p-3 rounded-lg glass hover:text-primary transition-colors focus-visible-ring"
             >

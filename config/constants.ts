@@ -6,8 +6,6 @@ export const SITE_CONFIG = {
   title: "Portfolio Agustin Sau",
   description: "Portafolio desarrollador fullstack",
   author: "Aguistin Ignacio Sau",
-  email: "agustin.sauu@gmail.com",
-  repository: "https://github.com/agustinsau",
   deployUrl: "https://agustin-sau-portfolio.vercel.app/",
 } as const;
 

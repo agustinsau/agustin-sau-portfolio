@@ -1,4 +1,5 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { SOCIAL_LINKS } from "@/config";
+import { Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com/agustinsau"
+              href={SOCIAL_LINKS.github}
               target="_blank"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
@@ -19,7 +20,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://linkedin.com/in/agusau"
+              href={SOCIAL_LINKS.linkedin}
               target="_blank"
               className="text-muted-foreground hover:text-primary transition-colors"
             >

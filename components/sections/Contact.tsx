@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Mail, MapPin } from "lucide-react";
 import ContactForm from "../layout/ContactForm";
+import { SOCIAL_LINKS } from "@/config";
 
 const Contact = () => {
   return (
@@ -40,8 +41,8 @@ const Contact = () => {
             </div>
             <div className="flex items-center gap-2 md:gap-3 text-base md:text-lg text-muted-foreground">
               <Mail className="text-primary flex-shrink-0" size={20} />
-              <a href="mailto:agustin.sauu@gmail.com" className="hover:text-primary transition focus-visible-ring rounded">
-                agustin.sauu@gmail.com
+              <a href={`mailto:${SOCIAL_LINKS.email}`} className="hover:text-primary transition focus-visible-ring rounded">
+                {SOCIAL_LINKS.email}
               </a>
             </div>
           </motion.div>
