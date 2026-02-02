@@ -4,10 +4,10 @@ export function getPersonSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Agustin Sau',
-    url: 'https://agustinsau.dev',
+    name: 'Agustin Ignacio Sau',
+    url: 'https://www.linkedin.com/in/agusau/',
     image: 'https://agustinsau.dev/images/profile.jpg',
-    jobTitle: 'Desarrollador Fullstack Junior',
+    jobTitle: 'Desarrollador Fullstack',
     worksFor: {
       '@type': 'Organization',
       name: 'Freelance',
@@ -19,7 +19,7 @@ export function getPersonSchema() {
     email: 'agustin.sauu@gmail.com',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+54-XXXXXXXXX',
+      telephone: '+54-2284602570',
       contactType: 'Customer Service',
     },
     knowsLanguage: ['es-AR', 'en'],
@@ -42,7 +42,7 @@ export function getProjectSchema(project: Project) {
     },
     author: {
       '@type': 'Person',
-      name: 'Agustin Sau',
+      name: 'Agustin Ignacio Sau',
     },
   };
 }
@@ -52,7 +52,7 @@ export function getOrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Agustin Sau',
-    url: 'https://agustinsau.dev',
+    url: 'https://agustin-sau-portfolio.vercel.app/',
     logo: 'https://agustinsau.dev/logo.png',
     sameAs: [
       'https://github.com/agustinsau',

@@ -3,12 +3,12 @@
  */
 
 export const SITE_CONFIG = {
-  title: "Portfolio",
-  description: "Portafolio profesional de desarrollador",
-  author: "Tu Nombre",
-  email: "contacto@ejemplo.com",
-  repository: "https://github.com",
-  deployUrl: "https://portfolio.vercel.app",
+  title: "Portfolio Agustin Sau",
+  description: "Portafolio desarrollador fullstack",
+  author: "Aguistin Ignacio Sau",
+  email: "agustin.sauu@gmail.com",
+  repository: "https://github.com/agustinsau",
+  deployUrl: "https://agustin-sau-portfolio.vercel.app/",
 } as const;
 
 export const FORM_CONFIG = {

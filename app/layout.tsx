@@ -4,14 +4,14 @@ import Navbar from "@/components/layout/Navbar";
 import { SkipLink } from "@/components/layout/SkipLink";
 import "./globals.css";
 
-const siteUrl = 'https://agustinsau.dev';
+const siteUrl = 'https://agustin-sau-portfolio.vercel.app/';
 const authorName = 'Agustin Sau';
-const authorDescription = 'Desarrollador Fullstack Junior especializado en React, Next.js y TypeScript. Creo aplicaciones web modernas, escalables y con diseño excepcional.';
+const authorDescription = 'Desarrollador Fullstack especializado en React, Next.js y TypeScript. Creo aplicaciones web modernas, escalables y con diseño excepcional.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   
-  title: `${authorName} | Desarrollador Fullstack Junior`,
+  title: `${authorName} | Desarrollador Fullstack`,
   description: authorDescription,
   
   keywords: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     locale: 'es_AR',
     url: siteUrl,
     siteName: authorName,
-    title: `${authorName} | Desarrollador Fullstack Junior`,
+    title: `${authorName} | Desarrollador Fullstack`,
     description: authorDescription,
     images: [
       {
@@ -41,17 +41,6 @@ export const metadata: Metadata = {
         type: 'image/jpeg',
       },
     ],
-  },
-  
-  twitter: {
-    card: 'summary_large_image',
-    title: `${authorName} | Desarrollador Fullstack Junior`,
-    description: authorDescription,
-    creator: '@agustinsau',
-    images: {
-      url: `${siteUrl}/og-image.jpg`,
-      alt: `${authorName} - Portfolio`,
-    },
   },
   
   robots: {

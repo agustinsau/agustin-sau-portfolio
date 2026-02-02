@@ -47,7 +47,7 @@ const About = () => {
                   <span className="text-primary font-semibold">
                     Agustin Sau
                   </span>
-                  , desarrollador Fullstack Junior enfocado en crear
+                  , desarrollador Fullstack enfocado en crear
                   aplicaciones web modernas, escalables y bien estructuradas.
                 </p>
 

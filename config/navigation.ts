@@ -15,8 +15,7 @@ export const NAV_ITEMS: NavLink[] = [
 export const NAVBAR_OFFSET = 80; // px - height del navbar para scroll offset
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
-  twitter: "https://twitter.com",
-  email: "contacto@ejemplo.com",
+  github: "https://github.com/agustinsau",
+  linkedin: "https://www.linkedin.com/in/agusau/",
+  email: "agustin.sauu@gmail.com",
 } as const;
